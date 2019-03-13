@@ -31,7 +31,7 @@
    </main> 
    <script>
 			//Step 1: Select all of the images on the page
-
+       var imgEl = document.getElementsByTagName("img");
 			
 			
 			
@@ -39,7 +39,11 @@
 
 			//Step 2: Change the second and fourth pictures on the page to the "lighthouseisland.jpg" picture in the 
 			//images folder
-
+       if (imgEl.length > 0) {
+           imgEl[1].src = "images/lighthouseisland.jpg";
+           imgEl[3].src = "images/lighthouseisland.jpg";
+           
+       }
 			
 			
 			
